@@ -55,6 +55,17 @@
   }
 }
 
+@mixin conic-gradient($from, $at) {
+  background-image: conic-gradient(
+    from $from at $at,
+    $special-red -46.69deg,
+    $special-dark-blue 32.24deg,
+    $special-red  313.31deg,
+    $special-dark-blue 392.24deg
+  );
+}
+
+
 // @mixin vp-1919 {
 //   @media (max-width: ($vp-1920 - 1px)) {
 //     @content;

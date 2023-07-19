@@ -1,8 +1,8 @@
 @font-face {
-  font-display: swap;
   font-family: 'Alumni Sans';
-  font-style: normal;
+  src: url('../../fonts/AlumniSans-SemiBold.woff2') format('woff2'),
+      url('../../fonts/AlumniSans-SemiBold.woff') format('woff');
   font-weight: 600;
-  src: url('../fonts/alumni-sans-v16-latin-600.woff2') format('woff2'),
-       url('../fonts/alumni-sans-v16-latin-600.woff') format('woff'),
+  font-style: normal;
+  font-display: swap;
 }

@@ -8,6 +8,8 @@ $primary-red:                      #ed0233;
 $primary-black:                    #030a1a;
 $special-white:                    #e8e8e8;
 $special-blue:                     #1c3374;
+$special-dark-blue:                #003d85;
+$special-red:                      #b80027;
 
 // Default
 
@@ -24,9 +26,6 @@ $color-torch-red:                   #ff1553;
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
-$secondary-red-to-blue:             linear-gradient(129deg, #D10A42 0%, #0041CA 100%);
-$fill-red-to-blue:                  linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
-$basic-red-to-blue:                 conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
 
 // Typography
 // ---------------------------------
