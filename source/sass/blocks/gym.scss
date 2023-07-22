@@ -1,10 +1,18 @@
+.gym {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
 .gym__title {
   margin: 0;
+  padding-top: 169px;
   color: $primary-blue;
   font-size: 48px;
   font-weight: 600;
   line-height: 58px;
-  letter-spacing: 1.44;
+  letter-spacing: 1.44px;
 }
 
 .gym__text {
@@ -17,9 +25,6 @@
 }
 
 .gym__description {
-  width: 355px;
-  font-family: $ff-roboto;
-  color: $primary-blue;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px
