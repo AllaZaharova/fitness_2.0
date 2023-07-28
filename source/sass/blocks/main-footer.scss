@@ -1,0 +1,17 @@
+.main-footer {
+  background-color: $primary-black;
+}
+
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-footer__logo {
+  margin: 0;
+  margin-top: 45px;
+  width: 88px;
+  height: 32px;
+}

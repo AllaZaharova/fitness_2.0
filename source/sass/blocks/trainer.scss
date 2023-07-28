@@ -1,0 +1,73 @@
+.trainer {
+  color: $primary-blue;
+}
+
+.trainer__title {
+  margin: 0;
+  margin-bottom: 48px;
+  font-family: $ff-alumni;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.62px;
+}
+
+.trainer__wrapper {
+  margin: 0;
+  margin-bottom: 105px;
+}
+
+.trainer__lists {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+
+  &--winner {
+    display: flex;
+    flex-direction: column;
+    list-style-type: circle;
+    gap: 24px;
+    justify-content: center;
+  }
+}
+
+.trainer__box {
+  position: relative;
+}
+
+.trainer__image {
+  display: block;
+  width: 260px;
+  height: 294px;
+  background-color: $primary-red;
+}
+
+.trainer__subtitle {
+  margin: 0;
+  position: absolute;
+  top: 251px;
+  left: 60px;
+  color: $color-default-white;
+  font-family: $ff-roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+
+  &--winner {
+    top: 81px;
+    left: 55px;
+  }
+}
+
+.trainer__text {
+  margin: 0;
+  color: $secondary-light-grey;
+  font-family: $ff-roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}

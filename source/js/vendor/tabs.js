@@ -172,6 +172,8 @@ export class Tabs {
     const currentIndex = control.dataset.index;
     const parentElement = control.closest('[data-tabs="parent"]');
 
+    console.log('works!');
+
     if (control.classList.contains('is-active') || parentElement.classList.contains('no-action')) {
       return;
     }

@@ -1,0 +1,45 @@
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.social__item {
+  margin-right: 10px;
+  padding-top: 41px;
+  padding-bottom: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  padding: 10px;
+  display: block;
+  top: -5px;
+  left: 5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $color-default-white;
+
+  &--vkontakte {
+    width: 15px;
+    height: 15px;
+  }
+
+  &--odnoklassniki {
+    width: 22px;
+    height: 22px;
+  }
+
+  &--reddit {
+    width: 20px;
+    height: 22px;
+  }
+}

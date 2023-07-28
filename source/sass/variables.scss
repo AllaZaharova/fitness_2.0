@@ -10,6 +10,11 @@ $special-white:                    #e8e8e8;
 $special-blue:                     #1c3374;
 $special-dark-blue:                #003d85;
 $special-red:                      #b80027;
+$other-blue:                       #003eb7;
+$other-red:                        #d10a42;
+$other-dark-blue:                  #0041ca;
+$secondary-light-grey:             #B6BDCC;
+
 
 // Default
 
@@ -35,7 +40,7 @@ $fz-default:                        16px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-rouble:                         "Rouble", "Arial", sans-serif;
+$ff-rouble:                         "Rouble", "Roboto condensed", sans-serif;
 
 $ff-alumni:                         "Alumni Sans", "Roboto Condensed", sans-serif;
 $ff-roboto:                         "Roboto Condensed", sans-serif;

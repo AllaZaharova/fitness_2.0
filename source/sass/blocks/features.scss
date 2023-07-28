@@ -1,0 +1,76 @@
+.features {
+  color: $primary-blue;
+  background-color: $secondary-white;
+  padding-top: 108px;
+}
+
+.features__lists {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 130px;
+}
+
+.features__item {
+
+  &--box {
+
+    padding: 64px 34px;
+    color: $color-default-white;
+    background-color: $special-blue;
+  }
+}
+
+.features__label {
+  margin: 0;
+  font-family: $ff-roboto;
+  font-size: 71px;
+  font-weight: 700;
+  line-height: 107px;
+
+  &--value {
+    font-size: 74px;
+    font-weight: 700;
+    line-height: 111px;
+    text-align: center;
+  }
+}
+
+.features__title {
+  margin: 0;
+  margin-bottom: 55px;
+  font-family: $ff-alumni;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 1.62px;
+  text-align: center;
+}
+
+.features__subtitle {
+  font-family: $ff-roboto;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 33px;
+
+  &--text {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 39px;
+    text-align: center;
+  }
+}
+
+.features__description {
+  font-family: $ff-roboto;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22.4px;
+
+  &--equipment {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}

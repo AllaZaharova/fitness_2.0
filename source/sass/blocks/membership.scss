@@ -1,0 +1,102 @@
+.membership {
+  padding-top: 120px;
+  background-color: $secondary-white;
+}
+
+.membership__title {
+  margin: 0;
+  margin-bottom: 25px;
+  color: $primary-blue;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 68px;
+  letter-spacing: 1.62px;
+  text-align: center;
+}
+
+.membership__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  list-style: none;
+}
+
+.membership__item {
+  width: 360px;
+  padding: 68px 76px;
+  margin-right: 40px;
+  background-color: $color-default-white;
+
+  &--day {
+    border-width: 7px;
+    border-style: solid;
+    border-image: linear-gradient(129deg, $other-red 10%, $other-dark-blue 100%) 1;
+  }
+}
+
+.membership__subtitle {
+  margin: 0;
+  margin-bottom: 18px;
+  text-align: center;
+  font-family: $ff-roboto;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.membership__description {
+  margin: 0;
+  margin-bottom: 59px;
+  font-family: $ff-roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.membership__value {
+  margin: 0;
+  margin-bottom: 59px;
+  position: relative;
+  color: $secondary-blue;
+  font-family: $ff-roboto;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 90px;
+  z-index: 2;
+
+  &::after {
+    content: "5000";
+    top: -75px;
+    left: -20px;
+    position: absolute;
+    color: $special-white;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 150px;
+    z-index: -1;
+  }
+}
+
+.membership__button {
+  padding: 27px 44px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: $primary-blue;
+  border: 2px solid $primary-blue;
+  background-color: $color-transparent;
+
+  &--red {
+    color: $color-default-white;
+    background-color: $primary-red;
+    border: none;
+    background-image: linear-gradient(115deg, $primary-red 20%, $other-blue 100%);
+  }
+
+  ;
+}
