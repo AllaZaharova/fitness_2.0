@@ -1,0 +1,57 @@
+.reviews {
+  background-color: $color-default-white;
+}
+
+.reviews__title {
+  margin: 0;
+  margin-bottom: 37px;
+  padding-top: 120px;
+  color: $primary-blue;
+  font-family: $ff-alumni;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 1.62px;
+  text-align: center;
+}
+
+.reviews__box-wrapper {
+  width: 560px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 42px;
+  margin: 0;
+  margin-bottom: 120px;
+  color: $color-default-white;
+  background-color: $special-blue;
+}
+
+.reviews__image {
+  display: block;
+  width: 80px;
+  height: 80px;
+}
+
+.reviews__box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 28px;
+}
+
+.reviews__subtitle {
+  margin: 0;
+  margin-bottom: 25px;
+font-family: $ff-roboto;
+font-size: 20px;
+font-weight: 700;
+line-height: 30px;
+}
+
+.reviews__text {
+  margin: 0;
+font-family: $ff-roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+}

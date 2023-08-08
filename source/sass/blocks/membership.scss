@@ -1,6 +1,7 @@
 .membership {
   padding-top: 120px;
   background-color: $secondary-white;
+  margin-bottom: 120px;
 }
 
 .membership__title {
@@ -26,9 +27,13 @@
 
 .membership__item {
   width: 360px;
-  padding: 68px 76px;
+  padding: 68px 70px;
   margin-right: 40px;
   background-color: $color-default-white;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   &--day {
     border-width: 7px;
@@ -81,11 +86,11 @@
 }
 
 .membership__button {
-  padding: 27px 44px;
+  padding: 27px 34px;
+  font-family: $ff-roboto;
   font-size: 12px;
   font-weight: 700;
   line-height: 14px;
-  letter-spacing: 0.6px;
   text-transform: uppercase;
   color: $primary-blue;
   border: 2px solid $primary-blue;
@@ -96,7 +101,5 @@
     background-color: $primary-red;
     border: none;
     background-image: linear-gradient(115deg, $primary-red 20%, $other-blue 100%);
-  }
-
-  ;
+  };
 }

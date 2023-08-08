@@ -1,7 +1,6 @@
 .mainpage {
   color: $color-default-white;
   background-color: $primary-red;
-  margin-bottom: 120px;
 
   @include conic-gradient(130.31deg, calc(50% - 465px) 257px);
 

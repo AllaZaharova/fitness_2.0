@@ -1,23 +1,26 @@
 .gym {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+padding-top: 120px;
 }
 
 .gym__wrapper-box {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 120px;
 }
 
 .gym__wrapper {
-  width: 380px;
+  width: 400px;
+  margin-right: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .gym__title {
   margin: 0;
-  padding-top: 48px;
+  margin-bottom: 25px;
+  padding-top: 40px;
   color: $primary-blue;
   font-size: 48px;
   font-weight: 600;
@@ -27,6 +30,7 @@
 
 .gym__text {
   margin: 0;
+  margin-bottom: 50px;
   font-family: $ff-roboto;
   color: $primary-blue;
   font-size: 18px;
@@ -35,6 +39,8 @@
 }
 
 .gym__description {
+  margin: 0;
+  margin-bottom: 10px;
   font-family: $ff-roboto;
   font-size: 16px;
   font-weight: 300;
@@ -44,18 +50,21 @@
 
 .gym__image-wrapper {
   display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .gym__image {
+  display: block;
   background-color: $primary-red;
   width: 660px;
   height: 401px;
 }
 
 .gym__video-box {
-  position: relative;
+  position: absolute;
   top: 300px;
-  left: -700px;
+  left: -63px;
   z-index: 2;
 }
 
@@ -70,8 +79,8 @@
   width: 100px;
   height: 100px;
   z-index: 1;
-  top: 40px;
-  left: 90px;
+  top: 60px;
+  left: 120px;
   border-radius: 50%;
   background-color: transparent;
 

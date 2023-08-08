@@ -71,7 +71,7 @@
   background-color: $color-transparent;
 }
 
-@media screen and (max-width: 1199px) {
+@media (max-width: ($vp-1366 - 1px)) {
   .hero__special-wrapper {
     display: flex;
     flex-direction: row;
@@ -134,4 +134,8 @@
     margin: 0;
     padding: 20px 33px;
   }
+}
+
+@media (max-width: ($vp-768 - 1px)) {
+
 }
