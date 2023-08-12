@@ -15,17 +15,50 @@
   text-align: center;
 }
 
-.reviews__box-wrapper {
-  width: 560px;
+.reviews__wrapper {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 120px;
+}
+
+.reviews__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 32px;
+  border: none;
+  background-color:$color-default-white;
+  cursor: pointer;
+
+  &--prev {
+    left: 230px;
+    background-image: url("../img/svg/arrow_prev.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--next {
+    right: 230px;
+    background-image: url("../img/svg/arrow_next.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.reviews__box-wrapper {
+  width: 560px;
   padding: 42px;
   margin: 0;
-  margin-bottom: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   color: $color-default-white;
   background-color: $special-blue;
 }
+
 
 .reviews__image {
   display: block;

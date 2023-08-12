@@ -76,9 +76,10 @@
       <section class="membership">
         <div class="container">
           <h2 class="membership__title">Абонементы</h2>
+
           <div class="tabs no-transition-global" data-tabs="parent" data-delay="300" data-height="max">
             <div class="tabs__controls" data-tabs="controls">
-              <button class="tabs__control btn" type="button" data-tabs="control">1&nbsp;месяц</button>
+              <button class="tabs__control btn is-active" type="button" data-tabs="control">1&nbsp;месяц</button>
               <button class="tabs__control btn" type="button" data-tabs="control">6&nbsp;месяцев</button>
               <button class="tabs__control btn" type="button" data-tabs="control">12&nbsp;месяцев</button>
             </div>
@@ -146,7 +147,6 @@
                   </li>
                 </ul>
               </div>
-
             </div>
           </div>
         </div>
@@ -183,38 +183,55 @@
         <div class="container">
           <h2 class="trainer__title">Тренеры</h2>
           <div class="trainer__wrapper">
+            <button class="trainer__button trainer__button--prev" type="button" aria-label="назад"></button>
+            <button class="trainer__button trainer__button--next" type="button" aria-label="Вперед"></button>
+
             <ul class="trainer__lists">
               <li class="trainer__item">
+                <div class="trainer__card">
                   <img class="trainer__image" src="img/trainers/trainer_pavlova_desktop.jpg" width="260" height="294"
                     alt="Тренер Анна Павлова">
-                  <h3 class="trainer__subtitle"> Анна Павлова</h3>
-              </li>
-              <li class="trainer__item">
-                  <img class="trainer__image" src="img/trainers/trainer_lavrov_desktop.jpg" width="260" height="294"
-                    alt="Тренер Алексей Лавров">
-                  <h3 class="trainer__subtitle">Алексей Лавров</h3>
-              </li>
-              <li class=" trainer__item">
-                  <img class="trainer__image" src="img/trainers/trainer_pashcov_desktop.jpg" width="260" height="294"
-                    alt="Тренер Александр Пашков">
-                   <div class="trainer__box">
-                  <h3 class="trainer__subtitle">Александр Пашков</h3>
-                  <p class="trainer__text">CrossFit</p>
-                  <ul class="trainer__lists">
-                    <li class="trainer__item">Certified Level 3 Trainer</li>
-                    <li class="trainer__item">Победитель чемпионата
-                      <br>России&nbsp;по&nbsp;CrossFit
-                    </li>
-                    <li class="trainer__item trainer__item--winner">Опыт&nbsp;—&nbsp;6 лет</li>
-                  </ul>
+                  <div class="trainer__box">
+                    <h3 class="trainer__subtitle"> Анна Павлова</h3>
+                  </div>
                 </div>
               </li>
               <li class="trainer__item">
+                <div class="trainer__card">
+                  <img class="trainer__image" src="img/trainers/trainer_lavrov_desktop.jpg" width="260" height="294"
+                    alt="Тренер Алексей Лавров">
+                  <div class="trainer__box">
+                    <h3 class="trainer__subtitle">Алексей Лавров</h3>
+                  </div>
+                </div>
+              </li>
+              <li class=" trainer__item">
+                <div class="trainer__card">
+                  <img class="trainer__image" src="img/trainers/trainer_pashcov_desktop.jpg" width="260" height="294"
+                    alt="Тренер Александр Пашков">
+                  <div class="trainer__box">
+                    <h3 class="trainer__subtitle">Александр Пашков</h3>
+                  </div>
+                  <div class="trainer__content">
+                    <p class="trainer__text">CrossFit</p>
+                    <ul class="trainer__sublists">
+                      <li class="trainer__subitem">Certified Level 3 Trainer</li>
+                      <li class="trainer__subitem">Победитель чемпионата
+                        <br>России&nbsp;по&nbsp;CrossFit
+                      </li>
+                      <li class="trainer__subitem">Опыт&nbsp;—&nbsp;6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="trainer__item">
+                <div class="trainer__card">
                   <img class="trainer__image" src="img/trainers/trainer_cetova_desktop.jpg" width="260" height="294"
                     alt="Тренер Мария Кетова">
-
-                  <h3 class="trainer__subtitle">Мария Кетова</h3>
-
+                  <div class="trainer__box">
+                    <h3 class="trainer__subtitle">Мария Кетова</h3>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
@@ -224,48 +241,51 @@
       <section class="features">
         <div class="container">
           <h2 class="features__title">Наши премущества</h2>
-          <ul class="features__lists">
-            <li class="features__item">
-              <p class="features__label">
-                <span class="features__label-area">900</span><br>
-                <span class="features__label-unit">кв/м</span>
-              </p>
-              <h3 class="features__subtitle">Площадь</h3>
-              <p class="features__description">Занимайтесь без&nbsp;очередей и&nbsp;толкучки</p>
-            </li>
-            <li class="features__item">
-              <p class="features__label">
-                <span class="features__label-option">70</span><br>
-                <span class="features__label-unit">машин</span>
-              </p>
-              <h3 class="features__subtitle">Собственная парковка</h3>
-              <p class="features__description">Вы&nbsp;всегда найдете место для&nbsp;своей машины на&nbsp;нашей парковке
-              </p>
-            </li>
-            <li class="features__item features__item--box">
-              <p class="features__label features__label--value">100</p>
-              <h3 class="features__subtitle features__subtitle--text">Тренажеров</h3>
-              <p class="features__description features__description--equipment">Современные тренажеры на&nbsp;все группы
-                мышц
-              </p>
-            </li>
-            <li class="features__item">
-              <p class="features__label">
-                <span class="features__label-option">350</span><br>
-                <span class="features__label-unit">мест</span>
-              </p>
-              <h3 class="features__subtitle">Комфорт</h3>
-              <p class="features__description">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-            </li>
-            <li class="features__item">
-              <p class="features__label">
-                <span class="features__label-option">5+</span><br>
-                <span class="features__label-unit">лет</span>
-              </p>
-              <h3 class="features__subtitle">Тренерский опыт</h3>
-              <p class="features__description">Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
-            </li>
+            <ul class="features__lists">
+              <li class="features__item features__item--area">
+                <p class="features__label">
+                  <span class="features__label-area">900</span><br>
+                  <span class="features__label-unit">кв/м</span>
+                </p>
+                <h3 class="features__subtitle">Площадь</h3>
+                <p class="features__description">Занимайтесь без&nbsp;очередей и&nbsp;толкучки</p>
+              </li>
+              <li class="features__item features__item--car">
+                <p class="features__label">
+                  <span class="features__label-option">70</span><br>
+                  <span class="features__label-unit">машин</span>
+                </p>
+                <h3 class="features__subtitle">Собственная парковка</h3>
+                <p class="features__description">Вы&nbsp;всегда найдете место для&nbsp;своей машины на&nbsp;нашей
+                  парковке
+                </p>
+              </li>
+              <li class="features__item features__item--comfort">
+                <p class="features__label">
+                  <span class="features__label-option">350</span><br>
+                  <span class="features__label-unit">мест</span>
+                </p>
+                <h3 class="features__subtitle">Комфорт</h3>
+                <p class="features__description">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+              </li>
+              <li class="features__item features__item--experience">
+                <p class="features__label">
+                  <span class="features__label-option">5+</span><br>
+                  <span class="features__label-unit">лет</span>
+                </p>
+                <h3 class="features__subtitle">Тренерский опыт</h3>
+                <p class="features__description">Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
+              </li>
+
+            <div class="features__subitem-box">
+              <div class="features__subitem">
+                <p class="features__value">100</p>
+                <h3 class="features__text">Тренажеров</h3>
+                <p class="features__equipment">Современные&nbsp;тренажеры на&nbsp;все&nbsp;группы мышц</p>
+              </div>
+            </div>
           </ul>
+
         </div>
       </section>
 
@@ -528,14 +548,19 @@
       <section class="reviews">
         <div class="container">
           <h2 class="reviews__title">Отзывы</h2>
-          <div class="reviews__box-wrapper">
-            <img class="reviews__image" src="img/avatar_desktop.png" width="80" height="80"
-              alt="Фотография Анны Орловой">
-            <div class="reviews__box">
-              <h3 class="reviews__subtitle">Анна Орлова</h3>
-              <blockquote class="reviews__text">&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе
-                всегда чисто, тренажеры обновляют,
-                персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</blockquote>
+          <div class="reviews__wrapper">
+            <button class="reviews__button reviews__button--prev" type="button" aria-label="назад"></button>
+            <button class="reviews__button reviews__button--next" type="button" aria-label="Вперед"></button>
+            <div class="reviews__box-wrapper">
+              <img class="reviews__image" src="img/avatar_desktop.png" width="80" height="80"
+                alt="Фотография Анны Орловой">
+              <div class="reviews__box">
+                <h3 class="reviews__subtitle">Анна Орлова</h3>
+                <blockquote class="reviews__text">&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что
+                  в&nbsp;клубе
+                  всегда чисто, тренажеры обновляют,
+                  персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</blockquote>
+              </div>
             </div>
           </div>
         </div>
