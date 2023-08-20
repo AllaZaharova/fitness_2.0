@@ -1,5 +1,6 @@
 .promotions {
   color: $primary-blue;
+  padding-top: 135px;
 }
 
 .promotions__title {
@@ -40,7 +41,7 @@
   margin-bottom: 35px;
   font-size: 70px;
   font-weight: 700;
-  line-height: 80px;
+  line-height: 70px;
 }
 
 .promotions__description {
@@ -72,7 +73,7 @@
 .promotions__box{
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  justify-content: space-between;
   margin-bottom: 120px;
 }
 
@@ -80,12 +81,13 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-left: 40px;
 }
 
 .promotions__item {
   color: $special-blue;
   font-family: $ff-roboto;
-  padding: 35px 125px 35px 35px;
+  padding: 35px 215px 35px 35px;
   border-width: 7px;
   border-style: solid;
   border-image: linear-gradient(180deg, $other-red 0%, $other-dark-blue 100%) 1;

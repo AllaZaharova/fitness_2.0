@@ -1,10 +1,11 @@
 .freegym-session {
   color: $color-default-white;
+  background-color: $primary-blue;
 }
 
 .freegym-session__wrapper {
  padding-top: 56px;
- padding-right: 170px;
+ padding-right: 60px;
  padding-bottom: 70px;
 }
 
@@ -18,11 +19,13 @@
 }
 
 .freegym-session__form input {
+  width: 190px;
+  margin-bottom: 30px;
+  margin-right: 30px;
   border: none;
   border-bottom: 1px solid $special-dark-grey;
-  margin-bottom: 30px;
   background-color: transparent;
-  margin-right: 30px;
+
 
   &::placeholder {
     color: $color-default-white;

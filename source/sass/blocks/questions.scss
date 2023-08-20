@@ -14,18 +14,10 @@
   letter-spacing: 1.62px;
 }
 
-.questions__subtitle {
-font-family: $ff-roboto;
-font-size: 24px;
-font-weight: 500;
-line-height: 29px;
-}
-
 .questions__description {
+  margin: 0;
   font-family: $ff-roboto;
   font-size: 18px;
-font-weight: 300;
-line-height: 25px;
+  font-weight: 300;
+  line-height: 25px;
 }
-
-

@@ -55,6 +55,12 @@
   }
 }
 
+@mixin vp-319 {
+  @media (max-width: ($vp-320 - 1px)) {
+    @content;
+  }
+}
+
 @mixin conic-gradient($from, $at) {
   background-image: conic-gradient(
     from $from at $at,

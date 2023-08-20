@@ -25,7 +25,7 @@
   width: 16px;
   height: 32px;
   border: none;
-  background-color:$color-default-white;
+  background-color: $color-default-white;
   cursor: pointer;
 
   &--prev {
@@ -53,35 +53,35 @@
   gap: 40px;
 }
 
-  .trainer__card {
-    position: relative;
-    width: 260px; // временно до подключения слайдера
-    padding-top: calc(100% * 294/260);
-    font-family: $ff-roboto;
+.trainer__card {
+  position: relative;
+  width: 260px; // временно до подключения слайдера
+  padding-top: calc(100% * 294/260);
+  font-family: $ff-roboto;
 
-    @include hover-focus {
-      .trainer__box {
-        justify-content: flex-start;
-        background-color: rgba($primary-blue, 0.89);
-      }
+  @include hover-focus {
+    .trainer__box {
+      justify-content: flex-start;
+      background-color: rgba($primary-blue, 0.89);
+    }
 
-      .trainer__content {
-        display: block;
-      }
+    .trainer__content {
+      display: block;
     }
   }
+}
 
 .trainer__box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    color: $color-default-white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: $color-default-white;
 }
 
 .trainer__content {
@@ -99,18 +99,19 @@
 .trainer__sublists {
   display: flex;
   flex-direction: column;
-  gap:24px
+  gap: 24px
 }
 
 .trainer__subitem {
   font-family: $ff-roboto;
-font-size: 14px;
-font-weight: 400;
-line-height: 21px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 .trainer__subtitle {
   margin: 0;
+  padding: 251px 36px 30px;
   font-family: $ff-roboto;
   font-size: 18px;
   font-weight: 700;

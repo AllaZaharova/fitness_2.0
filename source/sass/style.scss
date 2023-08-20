@@ -2,8 +2,11 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "vendor/data-tabs";
+@import "vendor/data-accordion";
+
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -32,7 +35,7 @@
 @import "blocks/membership.scss";
 @import "blocks/trainer.scss";
 @import "blocks/main-footer.scss";
-@import "blocks/tabs.scss";
+@import "blocks/membership-tabs";
 @import "blocks/promotions.scss";
 @import "blocks/social.scss";
 @import "blocks/site-list.scss";
@@ -42,6 +45,8 @@
 @import "blocks/footer-nav.scss";
 @import "blocks/form-contact.scss";
 @import "blocks/contacts.scss";
+@import "blocks/questions-tabs.scss";
+@import "blocks/accordion.scss";
 
 
 // ---------------------------------
