@@ -43,7 +43,7 @@
             </div>
             <picture>
               <source media="(max-width: 1199px)" srcset="img/man_bg_tablet.jpg, img/man_bg_tablet@2x.jpg 2x">
-              <img class="hero__image" src="img/man_bg_desktop.jpg" stcset="img/man_bg_desktop@2x.jpg 2x" width="500"
+              <img class="hero__image" src="img/man_bg_desktop.jpg" srcset="img/man_bg_desktop@2x.jpg 2x" width="500"
                 height="556" alt="Подтянутый мужчина">
             </picture>
           </div>
@@ -73,7 +73,7 @@
                   srcset="img/fitness_room_mobile.jpg, img/fitness_room_mobile@2x.jpg 2x">
                 <source media="(max-width: 1199px)"
                   srcset="img/fitness_room_tablet.jpg, img/fitness_room_tablet@2x.jpg 2x">
-                <img class="gym__image" src="img/fitness_room_desktop.jpg" rcset="img/fitness_room_desktop@2x.jpg 2x"
+                <img class="gym__image" src="img/fitness_room_desktop.jpg" srcset="img/fitness_room_desktop@2x.jpg 2x"
                   width="660" height="401" alt="тренажерный зал с расстановктй тренажеров">
               </picture>
               <div class="gym__video-box">
@@ -325,7 +325,7 @@
             <picture>
               <source media="(max-width: 767px)" srcset="img/crossfit_mobile.jpg,  img/crossfit_mobile@2x.jpg 2x">
               <source media="(max-width: 1199px)" srcset="img/crossfit_tablet.jpg,  img/crossrfit_tablet@2x.jpg 2x">
-              <img class="crossfit__image" src="img/crossfit_desktop.jpg" srcset="img/crossfit_desktop2x.jpg"
+              <img class="crossfit__image" src="img/crossfit_desktop.jpg" srcset="img/crossfit_desktop@2x.jpg"
                 width="660" height="500" alt="Сильный спортсмен">
             </picture>
           </div>
@@ -336,108 +336,111 @@
         <div class="container">
           <h2 class="trainer__title">Тренеры</h2>
           <div class="trainer__wrapper">
-            <button class="trainer__button trainer__button--prev" type="button" aria-label="назад"></button>
+            <button class="trainer__button trainer__button--prev" type="button" aria-label="Назад"></button>
             <button class="trainer__button trainer__button--next" type="button" aria-label="Вперед"></button>
-
-            <ul class="trainer__lists">
-              <li class="trainer__item">
-                <div class="trainer__card">
-                  <picture>
-                    <source media="(max-width: 767px)" srcset="">
-                    <source media="(max-width: 1199px)" srcset="">
-                    <img class="trainer__image" src="img/trainers/trainer_pavlova_desktop.jpg"
-                      srcset="img/trainers/trainer_pavlova_desktop2x.jpg" width="260" height="294"
-                      alt="Тренер Анна Павлова">
-                  </picture>
-                  <div class="trainer__box">
-                    <h3 class="trainer__subtitle"> Анна Павлова</h3>
-                    <div class="trainer__content">
-                      <p class="trainer__text">CrossFit</p>
-                      <ul class="trainer__sublists">
-                        <li class="trainer__subitem">Certified Level 3 Trainer</li>
-                        <li class="trainer__subitem">Победитель чемпионата
-                          <br>России&nbsp;по&nbsp;CrossFit
-                        </li>
-                        <li class="trainer__subitem">Опыт&nbsp;—&nbsp;6 лет</li>
-                      </ul>
+            <div class="trainer__swiper">
+              <ul class="trainer__lists swiper-wrapper">
+                <li class="trainer__item swiper-slide">
+                  <div class="trainer__card">
+                    <picture>
+                      <!-- <source media="(max-width: 767px)" srcset="">
+                      <source media="(max-width: 1199px)" srcset=""> -->
+                      <img class="trainer__image" src="img/trainers/trainer_pavlova_desktop.jpg"
+                        srcset="img/trainers/trainer_pavlova_desktop@2x.jpg 2x" width="260" height="294"
+                        alt="Тренер Анна Павлова">
+                    </picture>
+                    <div class="trainer__box">
+                      <h3 class="trainer__subtitle"> Анна Павлова</h3>
+                      <div class="trainer__content">
+                        <p class="trainer__text">CrossFit</p>
+                        <ul class="trainer__sublists">
+                          <li class="trainer__subitem">Certified Level 3 Trainer</li>
+                          <li class="trainer__subitem">Победитель чемпионата
+                            <br>России&nbsp;по&nbsp;CrossFit
+                          </li>
+                          <li class="trainer__subitem">Опыт&nbsp;—&nbsp;6 лет</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li class="trainer__item">
-                <div class="trainer__card">
-                  <picture>
-                    <source media="(max-width: 767px)" srcset="">
-                    <source media="(max-width: 1199px)" srcset="">
-                    <img class="trainer__image" src="img/trainers/trainer_lavrov_desktop.jpg"
-                      srcset="img/trainers/trainer_lavrov_desktop2x.jpg" width="260" height="294"
-                      alt="Тренер Алексей Лавров">
-                  </picture>
-                  <div class="trainer__box">
-                    <h3 class="trainer__subtitle">Алексей Лавров</h3>
-                    <div class="trainer__content">
-                      <p class="trainer__text">CrossFit</p>
-                      <ul class="trainer__sublists">
-                        <li class="trainer__subitem">Certified Level 3 Trainer</li>
-                        <li class="trainer__subitem">Победитель чемпионата
-                          <br>России&nbsp;по&nbsp;CrossFit
-                        </li>
-                        <li class="trainer__subitem">Опыт&nbsp;—&nbsp;6 лет</li>
-                      </ul>
+                </li>
+                <li class="trainer__item swiper-slide">
+                  <div class="trainer__card">
+                    <picture>
+                      <!-- <source media="(max-width: 767px)" srcset="">
+                      <source media="(max-width: 1199px)" srcset=""> -->
+                      <img class="trainer__image" src="img/trainers/trainer_lavrov_desktop.jpg"
+                        srcset="img/trainers/trainer_lavrov_desktop@2x.jpg 2x" width="260" height="294"
+                        alt="Тренер Алексей Лавров">
+                    </picture>
+                    <div class="trainer__box">
+                      <h3 class="trainer__subtitle">Алексей Лавров</h3>
+                      <div class="trainer__content">
+                        <p class="trainer__text">CrossFit</p>
+                        <ul class="trainer__sublists">
+                          <li class="trainer__subitem">Certified Level 3 Trainer</li>
+                          <li class="trainer__subitem">Победитель чемпионата
+                            <br>России&nbsp;по&nbsp;CrossFit
+                          </li>
+                          <li class="trainer__subitem">Опыт&nbsp;—&nbsp;6 лет</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li class=" trainer__item">
-                <div class="trainer__card">
-                  <picture>
-                    <source media="(max-width: 767px)"
-                      srcset="img/trainers/trainer_pashcov_mobile.jpg,  img/trainers/trainer_pashcov_mobile@2x.jpg 2x">
-                    <source media="(max-width: 1199px)"
-                      srcset="img/trainers/trainer_pashcov_tablet.jpg,  img/trainers/trainer_pashcov_tablet@2x.jpg 2x">
-                    <img class="trainer__image" src="img/trainers/trainer_pashcov_desktop.jpg"
-                      srcset="img/trainers/trainer_pashcov_desktop@2x.jpg 2x" width="260" height="294"
-                      alt="Тренер Александр Пашков">
-                  </picture>
-                  <div class="trainer__box">
-                    <h3 class="trainer__subtitle">Александр Пашков</h3>
-                    <div class="trainer__content">
-                      <p class="trainer__text">CrossFit</p>
-                      <ul class="trainer__sublists">
-                        <li class="trainer__subitem">Certified Level 3 Trainer</li>
-                        <li class="trainer__subitem">Победитель чемпионата
-                          <br>России&nbsp;по&nbsp;CrossFit
-                        </li>
-                        <li class="trainer__subitem">Опыт&nbsp;—&nbsp;6 лет</li>
-                      </ul>
+                </li>
+                <li class="trainer__item swiper-slide">
+                  <div class="trainer__card">
+                    <picture>
+                      <source media="(max-width: 767px)"
+                        srcset="img/trainers/trainer_pashcov_mobile.jpg,  img/trainers/trainer_pashcov_mobile@2x.jpg 2x">
+                      <source media="(max-width: 1199px)"
+                        srcset="img/trainers/trainer_pashcov_tablet.jpg,  img/trainers/trainer_pashcov_tablet@2x.jpg 2x">
+                      <img class="trainer__image" src="img/trainers/trainer_pashcov_desktop.jpg"
+                        srcset="img/trainers/trainer_pashcov_desktop@2x.jpg 2x" width="260" height="294"
+                        alt="Тренер Александр Пашков">
+                    </picture>
+                    <div class="trainer__box">
+                      <h3 class="trainer__subtitle">Александр Пашков</h3>
+                      <div class="trainer__content">
+                        <p class="trainer__text">CrossFit</p>
+                        <ul class="trainer__sublists">
+                          <li class="trainer__subitem">Certified Level 3 Trainer</li>
+                          <li class="trainer__subitem">Победитель чемпионата
+                            <br>России&nbsp;по&nbsp;CrossFit
+                          </li>
+                          <li class="trainer__subitem">Опыт&nbsp;—&nbsp;6 лет</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li class="trainer__item">
-                <div class="trainer__card">
-                  <picture>
-                    <source media="(max-width: 767px)" srcset="">
-                    <source media="(max-width: 1199px)" srcset="img/trainers/trainer_cetova_tablet.jpg,  img/trainers/trainer_cetova_tablet@2x.jpg 2x">
-                    <img class="trainer__image" src="img/trainers/trainer_cetova_desktop.jpg" srcset="img/trainers/trainer_cetova_desktop2x.jpg"  width="260" height="294"
-                      alt="Тренер Мария Кетова">
-                  </picture>
-                  <div class="trainer__box">
-                    <h3 class="trainer__subtitle">Мария Кетова</h3>
-                    <div class="trainer__content">
-                      <p class="trainer__text">CrossFit</p>
-                      <ul class="trainer__sublists">
-                        <li class="trainer__subitem">Certified Level 3 Trainer</li>
-                        <li class="trainer__subitem">Победитель чемпионата
-                          <br>России&nbsp;по&nbsp;CrossFit
-                        </li>
-                        <li class="trainer__subitem">Опыт&nbsp;—&nbsp;6 лет</li>
-                      </ul>
+                </li>
+                <li class="trainer__item swiper-slide">
+                  <div class="trainer__card">
+                    <picture>
+                      <!-- <source media="(max-width: 767px)" srcset=""> -->
+                      <source media="(max-width: 1199px)"
+                        srcset="img/trainers/trainer_cetova_tablet.jpg,  img/trainers/trainer_cetova_tablet@2x.jpg 2x">
+                      <img class="trainer__image" src="img/trainers/trainer_cetova_desktop.jpg"
+                        srcset="img/trainers/trainer_cetova_desktop@2x.jpg 2x" width="260" height="294"
+                        alt="Тренер Мария Кетова">
+                    </picture>
+                    <div class="trainer__box">
+                      <h3 class="trainer__subtitle">Мария Кетова</h3>
+                      <div class="trainer__content">
+                        <p class="trainer__text">CrossFit</p>
+                        <ul class="trainer__sublists">
+                          <li class="trainer__subitem">Certified Level 3 Trainer</li>
+                          <li class="trainer__subitem">Победитель чемпионата
+                            <br>России&nbsp;по&nbsp;CrossFit
+                          </li>
+                          <li class="trainer__subitem">Опыт&nbsp;—&nbsp;6 лет</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-            </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -511,10 +514,12 @@
                 <a class="promotions__button" href="#">подробнее</a>
               </div>
               <picture>
-                <source media="(max-width: 767px)" srcset=" img/promo_photo_mobile.jpg, img/promo_photo_mobile@2x.jpg 2x">
-                <source media="(max-width: 1199px)" srcset="img/promo_photo_tablet.jpg, img/promo_photo_tablet@2x.jpg 2x">
-              <img class="promotions__image" src="img/promo_photo_desktop.jpg" srcset="img/promo_photo_desktop@2x.jpg 2x"  width="280" height="462"
-                alt="девушка со стройной фигуры">
+                <source media="(max-width: 767px)"
+                  srcset=" img/promo_photo_mobile.jpg, img/promo_photo_mobile@2x.jpg 2x">
+                <source media="(max-width: 1199px)"
+                  srcset="img/promo_photo_tablet.jpg, img/promo_photo_tablet@2x.jpg 2x">
+                <img class="promotions__image" src="img/promo_photo_desktop.jpg"
+                  srcset="img/promo_photo_desktop@2x.jpg 2x" width="280" height="462" alt="девушка со стройной фигуры">
               </picture>
             </div>
             <ul class="promotions__list">
@@ -630,7 +635,7 @@
                   </div>
                   <div class="accordion__element" data-accordion="element">
                     <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button">Есть
-                      ли&nbsp;лимит по&nbsp;посещениям тренажерного зала и&nbsp;групповых занятий?</h3></button>
+                      ли&nbsp;лимит по&nbsp;посещениям тренажерного зала и&nbsp;групповых занятий?</button>
                     <div class="accordion__content" data-accordion="content">
                       <div class="accordion__wrapper">
                         <p class="questions__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -772,14 +777,14 @@
         <div class="container">
           <h2 class="reviews__title">Отзывы</h2>
           <div class="reviews__wrapper">
-            <button class="reviews__button reviews__button--prev" type="button" aria-label="назад"></button>
-            <button class="reviews__button reviews__button--next" type="button" aria-label="Вперед"></button>
+            <button class="reviews__button reviews__button--prev" type="button" aria-label="Previous slide"></button>
+            <button class="reviews__button reviews__button--next" type="button" aria-label="Next slide"></button>
             <div class="reviews__box-wrapper">
               <picture>
                 <source media="(max-width: 767px)" srcset="img/avatar_mobile.png, img/avatar_mobile@2x.png 2x">
                 <source media="(max-width: 1199px)" srcset="img/avatar_desktop.png, img/avatar_desktop@2x.png 2x">
-              <img class="reviews__image" src="img/avatar_desktop.png" srcset="img/avatar_desktop@2x.png 2x" width="80" height="80"
-                alt="Фотография Анны Орловой">
+                <img class="reviews__image" src="img/avatar_desktop.png" srcset="img/avatar_desktop@2x.png 2x"
+                  width="80" height="80" alt="Фотография Анны Орловой">
               </picture>
               <div class="reviews__box">
                 <h3 class="reviews__subtitle">Анна Орлова</h3>

@@ -2933,6 +2933,7 @@ p span {
 
 .trainer {
   color: #102654;
+  position: relative;
 }
 
 .trainer__title {
@@ -2943,12 +2944,6 @@ p span {
   font-weight: 600;
   line-height: 65px;
   letter-spacing: 1.62px;
-}
-
-.trainer__wrapper {
-  margin: 0;
-  margin-bottom: 105px;
-  position: relative;
 }
 
 .trainer__button {
@@ -2964,16 +2959,21 @@ p span {
   cursor: pointer;
 }
 .trainer__button--prev {
-  left: -50px;
+  left: 50px;
   background-image: url("../img/svg/arrow_prev.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 .trainer__button--next {
-  right: -50px;
+  right: 50px;
   background-image: url("../img/svg/arrow_next.svg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.trainer__wrapper {
+  margin: 0;
+  margin-bottom: 105px;
 }
 
 .trainer__lists {
@@ -2995,7 +2995,6 @@ p span {
 
 .trainer__card {
   position: relative;
-  width: 260px;
   padding-top: 113.0769230769%;
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -3061,7 +3060,20 @@ p span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  list-style-type: none;
+  position: relative;
   gap: 24px;
+  text-align: center;
+}
+.trainer__sublists::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ffffff;
 }
 
 .trainer__subitem {
@@ -3084,11 +3096,13 @@ p span {
 
 .trainer__text {
   margin: 0;
+  margin-bottom: 45px;
   color: #B6BDCC;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  text-align: center;
 }
 
 .main-footer {

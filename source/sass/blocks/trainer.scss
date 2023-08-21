@@ -1,5 +1,6 @@
 .trainer {
   color: $primary-blue;
+  position: relative;
 }
 
 .trainer__title {
@@ -10,12 +11,6 @@
   font-weight: 600;
   line-height: 65px;
   letter-spacing: 1.62px;
-}
-
-.trainer__wrapper {
-  margin: 0;
-  margin-bottom: 105px;
-  position: relative;
 }
 
 .trainer__button {
@@ -29,18 +24,23 @@
   cursor: pointer;
 
   &--prev {
-    left: -50px;
+    left: 50px;
     background-image: url("../img/svg/arrow_prev.svg");
     background-position: center;
     background-repeat: no-repeat;
   }
 
   &--next {
-    right: -50px;
+    right: 50px;
     background-image: url("../img/svg/arrow_next.svg");
     background-position: center;
     background-repeat: no-repeat;
   }
+}
+
+.trainer__wrapper {
+  margin: 0;
+  margin-bottom: 105px;
 }
 
 .trainer__lists {
@@ -55,7 +55,7 @@
 
 .trainer__card {
   position: relative;
-  width: 260px; // временно до подключения слайдера
+  // width: 260px; // временно до подключения слайдера
   padding-top: calc(100% * 294/260);
   font-family: $ff-roboto;
 
@@ -99,7 +99,21 @@
 .trainer__sublists {
   display: flex;
   flex-direction: column;
-  gap: 24px
+  list-style-type: none;
+  position: relative;
+  gap: 24px;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $color-default-white;
+  }
 }
 
 .trainer__subitem {
@@ -122,9 +136,11 @@
 
 .trainer__text {
   margin: 0;
+  margin-bottom: 45px;
   color: $secondary-light-grey;
   font-family: $ff-roboto;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  text-align: center;
 }
