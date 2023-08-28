@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/tabs/init-tabs';
 import {initAccordions} from './modules/accordions/init-accordion';
+import {swiperInit} from './modules/swiper-slide/swiper-init.js';
 
 // ---------------------------------
 
@@ -25,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     initTabs();
     initAccordions();
+    swiperInit();
   });
 });
 

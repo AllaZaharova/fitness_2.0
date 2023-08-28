@@ -2811,7 +2811,18 @@ p span {
 
 .membership {
   padding-top: 120px;
+  position: relative;
   background-color: #f8f9fc;
+}
+.membership::after {
+  position: absolute;
+  content: "";
+  top: 584px;
+  right: -30px;
+  width: 321px;
+  height: 384px;
+  background-image: url("../../img/kettlebell_desktop.png");
+  z-index: 0;
 }
 
 .membership__title {
@@ -2826,7 +2837,6 @@ p span {
 }
 
 .membership__list {
-  position: relative;
   margin: 0;
   margin-bottom: 120px;
   padding: 0;
@@ -2842,17 +2852,6 @@ p span {
           justify-content: space-between;
   width: 100%;
   list-style: none;
-}
-.membership__list::after {
-  position: absolute;
-  content: "";
-  top: 270px;
-  right: -130px;
-  width: 321px;
-  height: 384px;
-  background-color: #ed0233;
-  background-image: url("../../img/kettlebell_desktop.jpg");
-  z-index: -1;
 }
 
 .membership__item {
@@ -3060,20 +3059,15 @@ p span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  list-style-type: none;
-  position: relative;
+  list-style-type: circle;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 24px;
-  text-align: center;
-}
-.trainer__sublists::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: #ffffff;
+  text-align: start;
 }
 
 .trainer__subitem {
@@ -3215,15 +3209,6 @@ p span {
   .membership-tabs__element ul:not(:last-child) {
     margin-bottom: 20px;
   }
-}
-.membership-tabs__element:nth-child(1) {
-  background-color: #f8f9fc;
-}
-.membership-tabs__element:nth-child(2) {
-  background-color: #f8f9fc;
-}
-.membership-tabs__element:nth-child(3) {
-  background-color: #f8f9fc;
 }
 
 .promotions {

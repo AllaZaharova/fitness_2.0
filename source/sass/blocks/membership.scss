@@ -1,6 +1,18 @@
 .membership {
   padding-top: 120px;
+  position: relative;
   background-color: $secondary-white;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 584px;
+    right: -30px;
+    width: 321px;
+    height: 384px;
+    background-image: url("../../img/kettlebell_desktop.png");
+    z-index: 0;
+  }
 }
 
 .membership__title {
@@ -15,7 +27,6 @@
 }
 
 .membership__list {
-  position: relative;
   margin: 0;
   margin-bottom: 120px;
   padding: 0;
@@ -24,18 +35,6 @@
   justify-content: space-between;
   width: 100%;
   list-style: none;
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: 270px;
-    right: -130px;
-    width: 321px;
-    height: 384px;
-    background-color: $primary-red;
-    background-image: url("../../img/kettlebell_desktop.jpg");
-    z-index: -1;
-  }
 }
 
 .membership__item {

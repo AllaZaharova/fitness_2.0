@@ -99,21 +99,11 @@
 .trainer__sublists {
   display: flex;
   flex-direction: column;
-  list-style-type: none;
-  position: relative;
+  list-style-type: circle;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
-  text-align: center;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: $color-default-white;
-  }
+  text-align: start;
 }
 
 .trainer__subitem {
