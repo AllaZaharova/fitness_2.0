@@ -26,7 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     initTabs();
     initAccordions();
-    swiperInit();
+    swiperInit.init();
   });
 });
 

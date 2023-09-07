@@ -1,6 +1,5 @@
 .crossfit {
   background-color: $color-default-white;
-  margin-bottom: 106px;
   padding-top: 120px;
 }
 
@@ -74,7 +73,6 @@ p span {
   line-height: 21px;
 }
 
-
 .crossfit__button {
   margin: 0;
   padding: 25px 95px;
@@ -92,5 +90,121 @@ p span {
   display: block;
   width: 660px;
   height: 500px;
-  background-color: $primary-red;
+  background-color: $primary-blue;
+}
+
+@include vp-1199 {
+  .crossfit {
+    background-color: $color-default-white;
+    padding-top: 100px;
+  }
+
+  .crossfit__box-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .crossfit__wrapper {
+    width: 292px;
+    padding: 51px 45px;
+    color: $color-default-white;
+    background-color: $primary-red;
+  }
+
+  .crossfit__holder {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .crossfit__title {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: left;
+    font-family: $ff-alumni;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 1.44px;
+  }
+
+  .crossfit-description {
+    margin: 0;
+    margin-bottom: 36px;
+    font-family: $ff-roboto;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .crossfit__value {
+    padding: 0;
+    padding-bottom: 13px;
+    font-family: $ff-roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  .crossfit__text {
+    position: relative;
+    margin: 0;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  p span {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+  }
+
+  .crossfit__button {
+    margin: 0;
+    padding: 16px 50px;
+    font-family: $ff-roboto;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    border: 2px solid $color-default-white;
+  }
+
+  .crossfit__image {
+    display: block;
+    width: 386px;
+    height: 292px;
+    object-fit: cover;
+    background-color: $primary-blue;
+  }
+}
+
+@include vp-767 {
+  .crossfit {
+    background-color: $color-default-white;
+    padding-top: 70px;
+  }
+
+  .crossfit__box-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .crossfit__wrapper {
+    width: 290px;
+    padding: 44px 51px;
+    color: $color-default-white;
+    background-color: $primary-red;
+  }
+
+  .crossfit__holder {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .crossfit__image {
+    display: block;
+    width: 290px;
+    height: 292px;
+    background-color: $primary-blue;
+  }
 }

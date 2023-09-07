@@ -107,6 +107,8 @@
     text-align: right;
     font-size: 72px;
     line-height: 86px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: $color-default-white;
     letter-spacing: 3.6px;
     text-transform: uppercase;
   }
@@ -126,7 +128,7 @@
   }
 
   .hero__description {
-    margin: 30px 20px 0 0;
+    margin: 30px 15px 0 0;
     align-self: center;
     text-align: right;
     font-family: $ff-roboto;
@@ -137,11 +139,12 @@
 
   .hero__button {
     margin: 0;
+    margin-bottom: 107px;
     padding: 20px 33px;
   }
 }
 
-@include vp-319 {
+@include vp-767 {
   .hero__special-wrapper {
     display: flex;
     flex-direction: row;

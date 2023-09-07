@@ -9,10 +9,6 @@
   flex-direction: column;
   justify-content: flex-start;
   margin-right: 40px;
-
-  @media screen and (max-width: 767px) {
-    flex-wrap: wrap;
-  }
 }
 
 .questions-tabs__control {
@@ -34,18 +30,6 @@
     margin-bottom: 10px;
   }
 
-
-  @media screen and (max-width: 1023px) {
-    margin: 0 10px;
-    padding: 15px;
-  }
-
-  @media screen and (max-width: 767px) {
-    margin: 10px 2% 0;
-    padding: 10px;
-    width: 45%;
-  }
-
   &.is-active {
     opacity: 1;
     pointer-events: none;
@@ -54,7 +38,6 @@
 
 .questions-tabs__content {
   width: 100%;
-  margin-bottom: 40px;
   transition: height 0.3s;
 }
 
@@ -82,3 +65,88 @@
   }
 }
 
+@include vp-1199 {
+  .questions-tabs {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .questions-tabs__controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+
+  .questions-tabs__control {
+    min-width: auto;
+    width: 162px;
+    margin: 0;
+    padding: 18px 39px;
+    opacity: 0.5;
+
+    &:not(:last-child) {
+      margin-right: 10px ;
+      margin-bottom: 0;
+    }
+
+    &.is-active {
+      opacity: 1;
+      pointer-events: none;
+    }
+  }
+
+  .questions-tabs__content {
+    width: 100%;
+    transition: height 0.3s;
+  }
+}
+
+@include vp-767 {
+  .questions-tabs {
+    max-width: 100%;
+  }
+
+  .questions-tabs__controls {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .questions-tabs__control {
+    padding: 14px 33px;
+    opacity: 0.5;
+    min-width: auto;
+    width: 141px;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    background-color: transparent;
+    border:  1px solid rgba(16, 38, 84, 0.20);
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+
+    &.is-active {
+      opacity: 1;
+      pointer-events: none;
+    }
+  }
+
+  .questions-tabs__content {
+    width: 100%;
+    transition: height 0.3s;
+  }
+
+  .questions-tabs__element {
+    width: 100%;
+    padding: 0;
+  }
+}

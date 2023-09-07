@@ -4,3 +4,16 @@
   justify-content: flex-start;
 }
 
+@include vp-1199 {
+  .form-contact {
+  display: flex;
+  flex-direction: column;
+  }
+}
+
+@include vp-767 {
+  .form-contact {
+    display: flex;
+    flex-direction: column;
+    }
+}
